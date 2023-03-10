@@ -20,7 +20,7 @@ for (let i = 1; i < 101; i++) {
         buzz = 'buzz';
         fizz = ""
         fizzbuzz = ""
-    } else if (i % 3 == 0 , i % 5 == 0) {
+    } else if (i % 3 == 0 && i % 5 == 0) {
         fizzbuzz = 'fizzbuzz';
         fizz = "";
         buzz = "";
