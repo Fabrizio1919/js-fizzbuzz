@@ -9,7 +9,7 @@ let fizz = 'fizz';
 let buzz = 'buzz';
 let fizzbuzz = 'fizzbuzz';
 
-for (let i = 1; i < 101; i++) {
+for (let i = 1; i < 100; i++) {
     const liElement = document.createElement("li")
     ulElement.append(liElement)
 
@@ -25,9 +25,8 @@ for (let i = 1; i < 101; i++) {
         liElement.innerHTML = `${i}`
     }
 }
-
-
 console.log(ulElement);
+document.body.prepend(ulElement)
 
 
 

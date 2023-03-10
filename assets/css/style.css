@@ -1,0 +1,11 @@
+ul {
+display: flex;
+flex-wrap: wrap;
+}
+
+li {
+    width: 10%;
+    border: 1px solid black;
+    aspect-ratio: 1;
+    list-style: none;
+}
