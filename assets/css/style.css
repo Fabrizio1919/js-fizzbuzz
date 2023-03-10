@@ -1,6 +1,8 @@
 ul {
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    
+
 }
 
 li {
@@ -8,4 +10,21 @@ li {
     border: 1px solid black;
     aspect-ratio: 1;
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px 1px;
+}
+
+.fizzbuzz {
+    background-color: brown;
+    
+}
+
+.fizz {
+    background-color: green;
+}
+
+.buzz {
+    background-color: yellow;
 }
