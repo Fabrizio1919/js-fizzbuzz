@@ -5,36 +5,27 @@
 
 //Scrivere in console.log numeri da 1 a 100
 const ulElement = document.createElement("ul");
-let fizz = "";
-let buzz = "";
-let fizzbuzz = "";
-const liElement = document.createElement("li")
+let fizz = 'fizz';
+let buzz = 'buzz';
+let fizzbuzz = 'fizzbuzz';
 
 for (let i = 1; i < 101; i++) {
+    const liElement = document.createElement("li")
+    ulElement.append(liElement)
 
-    if (i % 3 == 0) {
-        fizz = 'fizz';
-        buzz = ""
-        fizzbuzz = ""
+    if (i % 3 == 0 && i % 5 == 0) {
+        liElement.innerHTML = `${fizzbuzz}`
+    } else if (i % 3 == 0) {
+
+        liElement.innerHTML = `${fizz}`
     } else if (i % 5 == 0) {
-        buzz = 'buzz';
-        fizz = ""
-        fizzbuzz = ""
-    } else if (i % 3 == 0 && i % 5 == 0) {
-        fizzbuzz = 'fizzbuzz';
-        fizz = "";
-        buzz = "";
+        liElement.innerHTML = `${buzz}`
     }
-    else if (i % 3 != 0 && i % 5 != 0) {
-        fizz = "";
-        buzz = "";
-        fizzbuzz = "";
+    else{
+        liElement.innerHTML = `${i}`
     }
-    liElement.append(`${i}${fizz}${buzz}${fizzbuzz}`);
 }
 
-
-ulElement.append(liElement)
 
 console.log(ulElement);
 
